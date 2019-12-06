@@ -5,5 +5,5 @@ if [ "$TRAVIS_BRANCH" = "master" ]; then
 else
     TAG="$TRAVIS_BRANCH"
 fi
-docker build -f Dockerfile -t mikedreyeu/pchmi-lab-6:$TAG .
-docker push mikedreyeu/pchmi-lab-6
+docker build -f Dockerfile -t NikitaDoroshkin/yachting-django:$TAG .
+docker push NikitaDoroshkin/yachting-django
