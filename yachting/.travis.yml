@@ -6,7 +6,7 @@ services:
 language: python
 
 script:
-  - pytest -v yachting_back/tests.py
+  - pytest -v yachting/yachting_back/tests.py
 
 after_success:
   - sh .travis/deploy_dockerhub.sh
