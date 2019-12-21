@@ -1,10 +1,56 @@
 <div class="header-container">
     <div class="container">
-        <div class="navbar-header-container">
-            <a class="navbar-brand">
-                <img src="../../assets/logo-picture.png" alt="Boat in the sea">
-                <p>Shed</p>
-            </a>
+        <div class="navbar-header">
+            <button (click)="onToggleButtonPress(navbar)" class="navbar-toggle collapsed" data-target="#navbar-collapse" data-toggle="collapse" type="button">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="https://dockwa.com">
+                <img src="../../assets/logo-picture.png" alt="Icon"></a></div>
+        <div #navbar class="collapse navbar-collapse" id="navbar-collapse">
+            <ul class="nav navbar-nav">
+                <!--<li class="nav-item"><a href="https://dockwa.com/explore">Explore</a></li>-->
+                <li class="nav-item"><a href="https://dockwa.com/search">Search</a></li>
+                <!--<li class="dropdown"><a aria-expanded="false" aria-haspopup="true" class="dropdown-toggle"
+                        data-toggle="dropdown" href="#" role="button">For Boaters&nbsp;<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="http://blog.dockwa.com">Blog</a></li>
+                        <li><a href="https://ahoy.dockwa.com/boater-resources">Resources</a></li>
+                        <li><a href="https://ahoy.dockwa.com/testimonials">Testimonials</a></li>
+                    </ul>
+                </li>-->
+                <!--<li class="dropdown"><a aria-expanded="false" aria-haspopup="true" class="dropdown-toggle"
+                        data-toggle="dropdown" href="#" role="button">For Marinas&nbsp;<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="https://ahoy.dockwa.com/marina-management">Marina Software</a></li>
+                        <li><a href="https://ahoy.dockwa.com/marina-management/pricing">Pricing</a></li>
+                        <li><a href="https://blog.dockwa.com/marinas">Blog</a></li>
+                        <li><a href="https://ahoy.dockwa.com/case-studies">Case Study</a></li>
+                        <li><a href="https://ahoy.dockwa.com/testimonials">Testimonials</a></li>
+                        <li><a href="https://ahoy.dockwa.com/learn">Learn Dockwa</a></li>
+                    </ul>
+                </li>-->
+                <li class="nav-item"><a href="https://dockwa.zendesk.com/" target="_blank">Help</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown"><a (click)="onDropDownPress(accountcontent)" class="dropdown-toggle" data-toggle="dropdown" href="#"
+                        role="button">Account&nbsp;<span class="caret"></span></a>
+                    <ul #accountcontent class="dropdown-menu" role="menu">
+                        <li><a href="/account">Account</a></li>
+                        <!--<li><a href="/account/trips">Trips</a></li>-->
+                        <!--<li><a href="/account/payment">Payment</a></li>-->
+                        <!--<li><a href="/account/boats">Boats</a></li>-->
+                        <li class="divider" role="separator"></li>
+                        <li><a href="/users/edit">Change Password</a></li>
+                        <li><a href="https://dockwa.zendesk.com/" target="_blank">Help</a></li>
+                        <li class="divider" role="separator"></li>
+                        <li><a href="https://dockwa.com/users/sign_out">Logout</a></li>
+                    </ul>
+                </li>
+                <!--<li class="download-nav-item"><a href="https://dockwa.com/download">Get the app</a></li>-->
+            </ul>
         </div>
     </div>
 </div>
