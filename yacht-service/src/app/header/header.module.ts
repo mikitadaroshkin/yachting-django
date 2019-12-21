@@ -8,6 +8,9 @@ import { HeaderComponent } from './header.component';
   imports: [
     CommonModule
   ],
-  declarations: [HeaderComponent]
+  declarations: [HeaderComponent],
+  exports: [
+    HeaderComponent
+  ]
 })
 export class HeaderModule { }

@@ -24,7 +24,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.scss"
             ],
             "scripts": []
           },
@@ -128,6 +128,9 @@
       "component": {
         "spec": false
       }
+    },
+    "@schematics/angular:component": {
+      "styleext": "scss"
     }
   }
 }
