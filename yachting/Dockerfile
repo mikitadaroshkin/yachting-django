@@ -7,4 +7,4 @@ RUN pip install -r requirements.txt
 COPY . /code/
 
 RUN ["chmod", "+x", "/code/run.sh"]
-CMD /code/scrpt.sh
+CMD ["/code/run.sh"]
